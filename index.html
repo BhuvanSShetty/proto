@@ -72,7 +72,11 @@
 
             if (role === 'supervisor') {
                 window.location.href = 'supervisor_dashboard.html';  // Replace with the actual path to the dashboard file
-            } else {
+            }else if (role === 'manager') {
+                window.location.href = 'manager.html'; 
+            }else if (role === 'worker') {
+                window.location.href = 'worker.html'; 
+            }else {
                 alert('Login functionality for ' + role + ' is not yet implemented.');
             }
         }
